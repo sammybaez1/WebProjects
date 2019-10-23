@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="stylesheet_t.css">
+<link rel="stylesheet" type="text/css" href="informationCSS.css">
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Assignments</a>
+                <div class="dropdown-content">
+                    <a href="Assignment0.html">Assignment 0</a>
+                    <a href="#">Assignment 1</a>
+                    <a href="Assignment2.html">Assignment 2</a>
+                </div>
+            <li><a href="information.html">Information</a></li>
+            </li>
+            <img class="ham" src="hamburger-icon.png" onclick="display()">
+        </ul>
+    </nav>
+
+
+    <div id="nav2" class="nav2">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown2">
+                <a href="javascript:void(0)" class="dropbtn2">Assignments</a>
+                <div class="dropdown-content2">
+                    <a href="Assignment0.html">Assignment 0</a>
+                    <a href="index.html">Assignment 1</a>
+                    <a href="Assignment2.html">Assignment 2</a>
+                </div>
+            <li><a href="information.html">Information</a></li>
+            </li>
+        </ul>
+
+        <script type="text/javascript">
+            function display() {
+                var n = document.getElementById("nav2");
+                if (n.style.display == 'block')
+                    n.style.display = 'none';
+                else
+                    n.style.display = 'block';
+            }
+
+        </script>
+
+
+    </div>
+
+    <div class=info>
+        <h1 id=header>Browser Information</h1>
+        <p id="codeName"></p>
+        <p id="appName"></p>
+        <p id="appVersion"></p>
+        <p id="cookieEnabled"></p>
+        <p id="language"></p>
+
+        <h2 id=header>Screen Information</h2>
+        <p id="aheight"></p>
+        <p id="awidth"></p>
+        <p id="cdepth"></p>
+        <p id="tHeight"></p>
+        <p id="cresolution"></p>
+        <p id="tWidth"></p>
+
+        <h3 id=header>Window Information</h3>
+        <p id="iWidth"></p>
+        <p id="iHeight"></p>
+        <p id="oWidth"></p>
+        <p id="oHeight"></p>
+
+        <script type="text/javascript">
+            var a = "Browser CodeName: " + navigator.appCodeName;
+            var b = "Browser Name: " + navigator.appName;
+            var c = "Version Info: " + navigator.appVersion;
+            var d = "Cookies Enabled: " + navigator.cookieEnabled;
+            var e = "Language: " + navigator.language;
+
+            document.getElementById("codeName").innerHTML = a;
+            document.getElementById("appName").innerHTML = b;
+            document.getElementById("appVersion").innerHTML = c;
+            document.getElementById("cookieEnabled").innerHTML = d;
+            document.getElementById("language").innerHTML = e;
+
+            var f = "Available Height: " + screen.availHeight;
+            var g = "Available Width: " + screen.availWidth;
+            var h = "Color Depth: " + screen.colorDepth;
+            var i = "Total Height: " + screen.height;
+            var j = "Color Resolution: " + screen.pixelDepth;
+            var k = "Total Width: " + screen.width;
+
+            document.getElementById("aheight").innerHTML = f;
+            document.getElementById("awidth").innerHTML = g;
+            document.getElementById("cdepth").innerHTML = h;
+            document.getElementById("tHeight").innerHTML = i;
+            document.getElementById("cresolution").innerHTML = j;
+            document.getElementById("tWidth").innerHTML = k;
+
+            var l = "Inner Width: " + window.innerWidth;
+            var m = "Inner Height: " + window.innerHeight;
+            var o = "Outer Width: " + window.outerWidth;
+            var p = "Outer Height: " + window.outerHeight;
+
+            document.getElementById("iWidth").innerHTML = l;
+            document.getElementById("iHeight").innerHTML = m;
+            document.getElementById("oWidth").innerHTML = o;
+            document.getElementById("oHeight").innerHTML = p;
+
+        </script>
+
+    </div>
+</body>
+
+
+</html>

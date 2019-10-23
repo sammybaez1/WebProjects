@@ -1,0 +1,140 @@
+body {
+    background-color: silver;
+    font-family: sans-serif
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+}
+
+nav .dropdown-content a {
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav .dropdown-content a:hover {
+    background-color: grey
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav img.ham {
+    max-width: 30px;
+    float: right;
+    display: none;
+    margin-top: 3px;
+    padding: 16.5px 16px;
+}
+
+
+
+@media all and (max-width: 600px) {
+    nav img.ham {
+        display: block;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    nav li {
+        display: none;
+    }
+
+    nav .dropdown a {
+        display: none;
+    }
+}
+
+@media all and (max-width:600px) {
+    .nav2 .dropdown {
+        display: none;
+    }
+}
+
+
+div.nav2 {
+    display: none;
+}
+
+
+div.nav2 li a,
+.dropbtn2 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+div.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: black;
+}
+
+div.nav2 li a {
+    display: block;
+    color: white;
+    padding: 20px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.nav2 .dropdown-content2 {
+    display: none;
+
+}
+
+div.nav2 .dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+div.nav2 .dropdown-content2 a {
+    color: white;
+    text-decoration: none;
+
+}
+
+div.nav2 li a:hover,
+.dropdown2:hover .dropbtn2 {
+    background-color: grey;
+}
